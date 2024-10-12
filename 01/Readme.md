@@ -136,3 +136,9 @@ const  app = () => {
 *| Step 3: Render Components in App.jsx*
     1. In App.jsx file, import the Greeting and ProductInfo components
     2. Inside the App component's return statement, render both components.
+
+
+
+# Lists
+
+In React, we will render lists with some type of loop. The JavaScript map() array method is generally the preferred method.
