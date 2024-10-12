@@ -77,3 +77,35 @@ In this exercise, we will practice basic JSX code and rendering it in a React ap
     1. Open the App.jsx file.
     2. Import the WelcomeMessage Component at the top of the file.
     3. Inside the App component's return statement, render it to the DOM.
+
+*| Step 2: Run the Application*
+    1. Run the app
+    2. We should see the "Hello World!" message along with "Welcome to learning JSX!" displayed in your browser.
+
+
+- Exercise 3: JSX Rules Exercise
+
+*| Step 1: Create a New Component*
+    1. Create a new file called JSXRules.jsx.
+    2. Inside this file, Write a functional component called JSXRules.
+
+The component should return a <div> containing the following:
+    * A <h1> element with the text "JSX Rules".
+    * A paragraph (<p>) that list atleast three rules of JSX:
+        - JSX must return a single parent element.
+        - JSX element must return a single parent element.
+        - JSX attributes are written using camelCase (e.g., className instead of class).
+
+
+# { Expressions in JSX }
+
+With JSX we can write expressions inside curly braces. The expressions can be a React variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result
+
+For Example:
+const app = () => {
+    return <p>2 + 2</p> // will return 2+2
+}
+but
+const  app = () => {
+    return <p>{2 + 2}</p> // will return 4
+}
