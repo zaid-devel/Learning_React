@@ -212,3 +212,68 @@ _Step 3: Pass Props from App.jsx_
         * Pass name and age as props to person component.
         * Pass name and price as props to product component.
 
+
+
+# Conditional Rendering
+
+Conditional Rendering allows us to dynamically display different UI components or content based on specific conditions. This enables us to create more interactve and responsive user experiences.
+
+Conditional rendering in React means showing different content or components based on a condition, like if-else in JavaScript.
+
+Example 1:
+
+function Greeting(props) {
+  if (props.isLoggedIn) {
+    return <h1>Welcome back!</h1>;
+  } else {
+    return <h1>Please sign in.</h1>;
+  }
+}
+
+How it works:
+
+If isLoggedIn is true, it shows "Welcome back!"
+If isLoggedIn is false, it shows "Please sign in."
+You use conditional rendering when you want your app to show different things depending on certain conditions (like login status, user actions, etc.).
+
+
+Example 2:
+
+const ValidPassword = () => <h1>Valid Password</h1>
+const InvalidPassword = () => <h1>Invalid Password</h1>
+
+const Password = ({isValid}) => {
+    <!--
+    if(isValid) {
+        return <ValidPassowrd />;
+    }
+    return <InvalidPassword />;
+    -->
+
+    return isValid ? <ValidPassowrd /> : <InvalidPassword />;
+};
+
+const App = () => {
+    return <Password isValid={true}/ >;
+};
+
+
+Example 3:
+
+const Cart = () => {
+const items = ["Wireless Earbuds", "Power Bank", "New SSD", "Hoddie"]
+return (
+    <>
+        <h1> Cart 🛒 </h1>
+        {items.length > 0 && <h2> You have {items.length} items in your Cart.</h2>}
+
+        <ul>
+            <h4> 👇 Products </h4>
+            {items.map((item) => (
+                <li key={Math.random()}>{item}</li>
+            ))}
+        </ul>
+    </>
+)
+
+};
