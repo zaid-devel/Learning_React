@@ -103,7 +103,10 @@ In React, we will render lists with some type of loop. The JavaScript map() arra
 
 In this exercise, we will learn how to render a list of items using the .map() method in JSX.
 
-_| Step 1: Create a UserList Component_ 1. Create a new file called UserList.jsx. 2. Inside this file, create a functional component called UserList. 3. In this component, create a user array with the following objects, where each object represent a user with id, name and age:
+_| Step 1: Create a UserList Component_
+    1. Create a new file called UserList.jsx.
+    2. Inside this file, create a functional component called UserList.
+    3. In this component, create a user array with the following objects, where each object represent a user with id, name and age:
 
     const user = [
         { id: 1, name: 'Alice', age: 25}
@@ -115,7 +118,8 @@ _| Step 1: Create a UserList Component_ 1. Create a new file called UserList.jsx
 
 _| Step 2: Create a ProductList Component_
     1. Create a new file called ProductList.jsx.
-    2. inside this file, create a functional component called ProductList. 3. Create a products array with the dollowing objects, where each object represents a product with id, name, and price:
+    2. inside this file, create a functional component called ProductList.
+    3. Create a products array with the following objects, where each object represents a product with id, name, and price:
 
     const product = [
         {id: 1, name: 'Phone', price: '$600'},
