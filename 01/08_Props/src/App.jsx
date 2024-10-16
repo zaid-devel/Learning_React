@@ -9,7 +9,7 @@ const User = (props) => {
     <h1>age: { props.age } </h1>
     <h1>Is Logged in: { props.isLoggedIn } </h1>
     <h1>Hobbies: { props.hobbies } </h1>
-  </section>
+  </section> 
 };
 
 export default App
