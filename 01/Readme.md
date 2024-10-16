@@ -146,3 +146,68 @@ _| Step 3: Render the Component in App.jsx_
         );
     }
     export default App;
+
+
+
+# PROPS
+
+~ Props/ Properties are arguments passed into reeact component.
+~ Props allows us to pass data from parent component to a child component.
+~ Props are passed to a component via HTML attributes
+
+Props in React are like inputs or arguments for components. They let you pass data from one component (usually a parent) to another (usually a child).
+Props help make components reusable by customizing them with different data.
+
+Example:
+<!-- App Component -->
+const App = () => {
+    return (
+        <User
+            img="https://media.istockphoto.com/id/1222254034/photo/a-concept-image-of-a-magnifying-glass-isolated-white-background-with-a-word-example-zoom.jpg?s=612x612&w=is&k=20&c=4cRJ1_07g4DQAYQ6CSzuQMdqQ_0Gf0trHUi5LSiuNdw="
+            name="Example"
+            age={20}
+            isLoggedIn={false}
+            hobbies={["Coding", "Reading", "Sleeping"]}
+        />
+
+<!-- User Component -->
+const User = (props) => {
+    return (
+        <section>
+            <img src={props.img} alt={props.name} width={200} />
+            <h1>Name: {props.name}</h1>
+            <h2>Age: {props.age}</h2>
+            <h3>Is Logged in: {props.isLoggedIn}</h3>
+            <h4>Hobbies: {props.hobbies}</h4>
+        </section>
+    )
+}
+    )
+}
+
+
+
+- Exercise 6: Using Props in React Components
+
+In this exercise, we will learn how to pass and use props in react components to make them dynamic and reusable.
+
+_Step 1: Create a Person Component_
+    1. Create a new file called Person.jsx.
+    2. Inside this file, create a functional component called Person.
+    3. This component should accept props and render:
+        * A <h2> element that displays the person's name.
+        * A <p> element that displays the person's age.
+    4. Use props.name and props.age to display the dynamic values passed from the parent component.
+
+_Step 2: Create a Product Component_
+    1. Create a new file called Product.jsx.
+    2. Inside this file, create a functional component called Product.
+    3. This component should accept props and render:
+        * A <h2> element that displays the products's name.
+        * A <p> element that displays the products's price.
+    4. Use props.name and props.price to display the values passed from the parent component.
+    
+_Step 3: Pass Props from App.jsx_
+    1. In App.jsx file, import the person and product component:
+        * Pass name and age as props to person component.
+        * Pass name and price as props to product component.
