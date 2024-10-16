@@ -211,3 +211,4 @@ _Step 3: Pass Props from App.jsx_
     1. In App.jsx file, import the person and product component:
         * Pass name and age as props to person component.
         * Pass name and price as props to product component.
+
