@@ -277,3 +277,65 @@ return (
 )
 
 };
+
+
+
+- Exercise 7: Conditional Rendering in React
+
+In this exercise, we will practice different ways to render JSX conditionally in React components.
+
+_Step 1: Create a Weather Component with if, else if, and else_
+    1. Create a new file called Weather.jsx.
+    2. Inside this file, create a functional component called Weather.
+    3. The component should:
+        * Take a temperature prop.
+        * Use if, else id and else statements to conditionally render different messages based on the temperature value.
+            - if the temperature is below 15, display: "It's cold outside!"
+            - if the temperature is between 15 and 25, display: "It's nice outside!"
+            - if the temperature is above 25, display: "It's hot outside!"
+
+_Step 2: Create a UserStatus Component with && Operator_
+    1. Create a new file called UserStatus.jsx.
+    2. Inside this file, create a functional component called UserStatus.
+    3. The component should:
+        * Take two boolean props loggedIn, isAdmin.
+        * Use the && Operator to display a message for Admin and Normal User:
+            - If loggedIn is true and Admin display: "Welcome Admin!"
+            - If it's just loggedIn and not Admin then display "Welcome User".
+
+_Step 3: Create a Greeting Component with a Ternary Operator_
+    1. Create a new file called Greeting.jsx.
+    2. Inside this file, create a functional component called Greeting.
+    3. The component should:
+        * Take a timeOfDay prop (e.g., "morning","afternoon").
+        * Use the ternary operator to condiionally display greeting based on the time of day:
+            - If timeOfDay is "morning" display: "Good Morning!".
+            - If timeOfDay is "afternoon" display: "Good Afternoon!".
+
+_Step 4: Render the component in App.jsx_
+    1. In App.jsx file, import the weather, UserStatus, and Greeting Components.
+    2. Inside the App Component, render each component with different props to test the conditional rendering logic.
+
+    Example:
+    functional App() {
+        return (
+            <div>
+            <h1>Conditional Rendering in React</h1>
+            
+            {/* Weather Component */}
+            <Weather temperature = {10}/>
+            <Weather temperature = {20}/>
+            <Weather temperature = {30}/>
+            
+            {/* UserStatus Component */}
+            <UserStatus loggedIn = {true}/>
+            <UserStatus loggedIn = {false}/>
+            
+            {/* Greeting Component */}
+            <Greeting timeOfDay = "morning"/>
+            <Greeting timeOfDay = "afternoon"/>
+            <Greeting timeOfDay = "evening"/>
+            <Greeting/>
+            </div>
+        )
+    }
