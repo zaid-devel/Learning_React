@@ -339,3 +339,22 @@ _Step 4: Render the component in App.jsx_
             </div>
         )
     }
+
+
+
+- Exercise 8: Styling Components in React
+
+In this exercise, we will learn how to apply styles using different methods in react Components, including inline styles, style objects, and React icons.
+
+_Step 1: Create a StyleCard Component with Inline Styles_
+    1. Create a new file called StyleCard.jsx.
+    2. Inside this file, create a functional component called StyleCard.
+    3. Use Inline styles to style the component:
+        * Set the background color to light blue.
+        * Set padding to 20px.
+        * Set border radius to 10px.
+        * Set text color to dark blue.
+    4. Render a <div> with a title and description inside it.
+
+_Step 2: Create a ProfileCard Component with Separate Style Object_
+    
