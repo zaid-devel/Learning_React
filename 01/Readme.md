@@ -103,10 +103,7 @@ In React, we will render lists with some type of loop. The JavaScript map() arra
 
 In this exercise, we will learn how to render a list of items using the .map() method in JSX.
 
-_| Step 1: Create a UserList Component_
-    1. Create a new file called UserList.jsx.
-    2. Inside this file, create a functional component called UserList.
-    3. In this component, create a user array with the following objects, where each object represent a user with id, name and age:
+_| Step 1: Create a UserList Component_ 1. Create a new file called UserList.jsx. 2. Inside this file, create a functional component called UserList. 3. In this component, create a user array with the following objects, where each object represent a user with id, name and age:
 
     const user = [
         { id: 1, name: 'Alice', age: 25}
@@ -116,10 +113,7 @@ _| Step 1: Create a UserList Component_
 
     4. Use the .map() method to render a list of users. Each user's name and age should be displayed inside a <div> element. Use the id as the unique key for each list item.
 
-_| Step 2: Create a ProductList Component_
-    1. Create a new file called ProductList.jsx.
-    2. inside this file, create a functional component called ProductList.
-    3. Create a products array with the following objects, where each object represents a product with id, name, and price:
+_| Step 2: Create a ProductList Component_ 1. Create a new file called ProductList.jsx. 2. inside this file, create a functional component called ProductList. 3. Create a products array with the following objects, where each object represents a product with id, name, and price:
 
     const product = [
         {id: 1, name: 'Phone', price: '$600'},
@@ -129,8 +123,7 @@ _| Step 2: Create a ProductList Component_
 
     4. Use the .map() method to render the list of products. Each product's name and price ahould be displayed inside a <div> element. Use the id as the key for each product.
 
-_| Step 3: Render the Component in App.jsx_
-    1. In App.jsx file, import the UserList and ProductList components:
+_| Step 3: Render the Component in App.jsx_ 1. In App.jsx file, import the UserList and ProductList components:
 
         import UserList from "./UserList";
         import ProductList from "./ProductList";
@@ -147,8 +140,6 @@ _| Step 3: Render the Component in App.jsx_
     }
     export default App;
 
-
-
 # PROPS
 
 ~ Props/ Properties are arguments passed into reeact component.
@@ -159,60 +150,50 @@ Props in React are like inputs or arguments for components. They let you pass da
 Props help make components reusable by customizing them with different data.
 
 Example:
+
 <!-- App Component -->
+
 const App = () => {
-    return (
-        <User
-            img="https://media.istockphoto.com/id/1222254034/photo/a-concept-image-of-a-magnifying-glass-isolated-white-background-with-a-word-example-zoom.jpg?s=612x612&w=is&k=20&c=4cRJ1_07g4DQAYQ6CSzuQMdqQ_0Gf0trHUi5LSiuNdw="
-            name="Example"
-            age={20}
-            isLoggedIn={false}
-            hobbies={["Coding", "Reading", "Sleeping"]}
-        />
+return (
+<User
+img="https://media.istockphoto.com/id/1222254034/photo/a-concept-image-of-a-magnifying-glass-isolated-white-background-with-a-word-example-zoom.jpg?s=612x612&w=is&k=20&c=4cRJ1_07g4DQAYQ6CSzuQMdqQ_0Gf0trHUi5LSiuNdw="
+name="Example"
+age={20}
+isLoggedIn={false}
+hobbies={["Coding", "Reading", "Sleeping"]}
+/>
 
 <!-- User Component -->
+
 const User = (props) => {
-    return (
-        <section>
-            <img src={props.img} alt={props.name} width={200} />
-            <h1>Name: {props.name}</h1>
-            <h2>Age: {props.age}</h2>
-            <h3>Is Logged in: {props.isLoggedIn}</h3>
-            <h4>Hobbies: {props.hobbies}</h4>
-        </section>
-    )
+return (
+<section>
+<img src={props.img} alt={props.name} width={200} />
+<h1>Name: {props.name}</h1>
+<h2>Age: {props.age}</h2>
+<h3>Is Logged in: {props.isLoggedIn}</h3>
+<h4>Hobbies: {props.hobbies}</h4>
+</section>
+)
 }
-    )
+)
 }
-
-
 
 - Exercise 6: Using Props in React Components
 
 In this exercise, we will learn how to pass and use props in react components to make them dynamic and reusable.
 
-_Step 1: Create a Person Component_
-    1. Create a new file called Person.jsx.
-    2. Inside this file, create a functional component called Person.
-    3. This component should accept props and render:
-        * A <h2> element that displays the person's name.
-        * A <p> element that displays the person's age.
-    4. Use props.name and props.age to display the dynamic values passed from the parent component.
+_Step 1: Create a Person Component_ 1. Create a new file called Person.jsx. 2. Inside this file, create a functional component called Person. 3. This component should accept props and render:
+_ A <h2> element that displays the person's name.
+_ A <p> element that displays the person's age. 4. Use props.name and props.age to display the dynamic values passed from the parent component.
 
-_Step 2: Create a Product Component_
-    1. Create a new file called Product.jsx.
-    2. Inside this file, create a functional component called Product.
-    3. This component should accept props and render:
-        * A <h2> element that displays the products's name.
-        * A <p> element that displays the products's price.
-    4. Use props.name and props.price to display the values passed from the parent component.
-    
-_Step 3: Pass Props from App.jsx_
-    1. In App.jsx file, import the person and product component:
-        * Pass name and age as props to person component.
-        * Pass name and price as props to product component.
+_Step 2: Create a Product Component_ 1. Create a new file called Product.jsx. 2. Inside this file, create a functional component called Product. 3. This component should accept props and render:
+_ A <h2> element that displays the products's name.
+_ A <p> element that displays the products's price. 4. Use props.name and props.price to display the values passed from the parent component.
 
-
+_Step 3: Pass Props from App.jsx_ 1. In App.jsx file, import the person and product component:
+_ Pass name and age as props to person component.
+_ Pass name and price as props to product component.
 
 # Conditional Rendering
 
@@ -223,11 +204,11 @@ Conditional rendering in React means showing different content or components bas
 Example 1:
 
 function Greeting(props) {
-  if (props.isLoggedIn) {
-    return <h1>Welcome back!</h1>;
-  } else {
-    return <h1>Please sign in.</h1>;
-  }
+if (props.isLoggedIn) {
+return <h1>Welcome back!</h1>;
+} else {
+return <h1>Please sign in.</h1>;
+}
 }
 
 How it works:
@@ -236,14 +217,13 @@ If isLoggedIn is true, it shows "Welcome back!"
 If isLoggedIn is false, it shows "Please sign in."
 You use conditional rendering when you want your app to show different things depending on certain conditions (like login status, user actions, etc.).
 
-
 Example 2:
 
 const ValidPassword = () => <h1>Valid Password</h1>
 const InvalidPassword = () => <h1>Invalid Password</h1>
 
 const Password = ({isValid}) => {
-    <!--
+<!--
     if(isValid) {
         return <ValidPassowrd />;
     }
@@ -251,21 +231,21 @@ const Password = ({isValid}) => {
     -->
 
     return isValid ? <ValidPassowrd /> : <InvalidPassword />;
+
 };
 
 const App = () => {
-    return <Password isValid={true}/ >;
+return <Password isValid={true}/ >;
 };
-
 
 Example 3:
 
 const Cart = () => {
 const items = ["Wireless Earbuds", "Power Bank", "New SSD", "Hoddie"]
 return (
-    <>
-        <h1> Cart 🛒 </h1>
-        {items.length > 0 && <h2> You have {items.length} items in your Cart.</h2>}
+<>
+<h1> Cart 🛒 </h1>
+{items.length > 0 && <h2> You have {items.length} items in your Cart.</h2>}
 
         <ul>
             <h4> 👇 Products </h4>
@@ -274,63 +254,44 @@ return (
             ))}
         </ul>
     </>
+
 )
 
 };
-
-
 
 - Exercise 7: Conditional Rendering in React
 
 In this exercise, we will practice different ways to render JSX conditionally in React components.
 
-_Step 1: Create a Weather Component with if, else if, and else_
-    1. Create a new file called Weather.jsx.
-    2. Inside this file, create a functional component called Weather.
-    3. The component should:
-        * Take a temperature prop.
-        * Use if, else id and else statements to conditionally render different messages based on the temperature value.
-            - if the temperature is below 15, display: "It's cold outside!"
-            - if the temperature is between 15 and 25, display: "It's nice outside!"
-            - if the temperature is above 25, display: "It's hot outside!"
+_Step 1: Create a Weather Component with if, else if, and else_ 1. Create a new file called Weather.jsx. 2. Inside this file, create a functional component called Weather. 3. The component should:
+_ Take a temperature prop.
+_ Use if, else id and else statements to conditionally render different messages based on the temperature value. - if the temperature is below 15, display: "It's cold outside!" - if the temperature is between 15 and 25, display: "It's nice outside!" - if the temperature is above 25, display: "It's hot outside!"
 
-_Step 2: Create a UserStatus Component with && Operator_
-    1. Create a new file called UserStatus.jsx.
-    2. Inside this file, create a functional component called UserStatus.
-    3. The component should:
-        * Take two boolean props loggedIn, isAdmin.
-        * Use the && Operator to display a message for Admin and Normal User:
-            - If loggedIn is true and Admin display: "Welcome Admin!"
-            - If it's just loggedIn and not Admin then display "Welcome User".
+_Step 2: Create a UserStatus Component with && Operator_ 1. Create a new file called UserStatus.jsx. 2. Inside this file, create a functional component called UserStatus. 3. The component should:
+_ Take two boolean props loggedIn, isAdmin.
+_ Use the && Operator to display a message for Admin and Normal User: - If loggedIn is true and Admin display: "Welcome Admin!" - If it's just loggedIn and not Admin then display "Welcome User".
 
-_Step 3: Create a Greeting Component with a Ternary Operator_
-    1. Create a new file called Greeting.jsx.
-    2. Inside this file, create a functional component called Greeting.
-    3. The component should:
-        * Take a timeOfDay prop (e.g., "morning","afternoon").
-        * Use the ternary operator to condiionally display greeting based on the time of day:
-            - If timeOfDay is "morning" display: "Good Morning!".
-            - If timeOfDay is "afternoon" display: "Good Afternoon!".
+_Step 3: Create a Greeting Component with a Ternary Operator_ 1. Create a new file called Greeting.jsx. 2. Inside this file, create a functional component called Greeting. 3. The component should:
+_ Take a timeOfDay prop (e.g., "morning","afternoon").
+_ Use the ternary operator to condiionally display greeting based on the time of day: - If timeOfDay is "morning" display: "Good Morning!". - If timeOfDay is "afternoon" display: "Good Afternoon!".
 
-_Step 4: Render the component in App.jsx_
-    1. In App.jsx file, import the weather, UserStatus, and Greeting Components.
-    2. Inside the App Component, render each component with different props to test the conditional rendering logic.
+_Step 4: Render the component in App.jsx_ 1. In App.jsx file, import the weather, UserStatus, and Greeting Components. 2. Inside the App Component, render each component with different props to test the conditional rendering logic.
 
     Example:
     functional App() {
         return (
             <div>
             <h1>Conditional Rendering in React</h1>
-            
+
             {/* Weather Component */}
             <Weather temperature = {10}/>
             <Weather temperature = {20}/>
             <Weather temperature = {30}/>
-            
+
             {/* UserStatus Component */}
             <UserStatus loggedIn = {true}/>
             <UserStatus loggedIn = {false}/>
-            
+
             {/* Greeting Component */}
             <Greeting timeOfDay = "morning"/>
             <Greeting timeOfDay = "afternoon"/>
@@ -340,21 +301,14 @@ _Step 4: Render the component in App.jsx_
         )
     }
 
-
-
 - Exercise 8: Styling Components in React
 
 In this exercise, we will learn how to apply styles using different methods in react Components, including inline styles, style objects, and React icons.
 
-_Step 1: Create a StyleCard Component with Inline Styles_
-    1. Create a new file called StyleCard.jsx.
-    2. Inside this file, create a functional component called StyleCard.
-    3. Use Inline styles to style the component:
-        * Set the background color to light blue.
-        * Set padding to 20px.
-        * Set border radius to 10px.
-        * Set text color to dark blue.
-    4. Render a <div> with a title and description inside it.
+_Step 1: Create a StyleCard Component with Inline Styles_ 1. Create a new file called StyleCard.jsx. 2. Inside this file, create a functional component called StyleCard. 3. Use Inline styles to style the component:
+_ Set the background color to light blue.
+_ Set padding to 20px.
+_ Set border radius to 10px.
+_ Set text color to dark blue. 4. Render a <div> with a title and description inside it.
 
 _Step 2: Create a ProfileCard Component with Separate Style Object_
-    
