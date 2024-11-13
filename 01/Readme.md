@@ -358,6 +358,6 @@ _Step 4: Render All Components in App. jsx_
                     <ProfileCard />
                     <IconComponent />
                 </div>
-            );
+            ); 
         }   
         export default App;
