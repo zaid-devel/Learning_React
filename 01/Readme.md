@@ -2,7 +2,7 @@ React is a free and open-source JavaScript library specially designed for buildi
 
 Open Source: Being open source means that React's source code is freely available for anyone to use, modify, and contribute to.
 
-\_Library: A library is a set of pre-written code that helps developers do common tasks more easily. Instead of writing code from scratch, they can use functions from the library.
+- Library: A library is a set of pre-written code that helps developers do common tasks more easily. Instead of writing code from scratch, they can use functions from the library.
 
 --> Developed By Facebook 2011
 
@@ -30,9 +30,12 @@ _| Step 3: Create MainContent Component_ 1. Create a new file called MainContent
 _ A <h2> element with the text "Main Content".
 _ A <p> element with any text of your choice.
 
-_| Step 4: Render Component inside App.jsx_ 1. In App.jsx file, import the Header, MainContent, and Footer components:
-_ import Header from "./Header";
-_ import MainContent from "./MainContent"; \* import Footer from "./Footer";
+_| Step 4: Render Component inside App.jsx_
+
+    1. In App.jsx file, import the Header, MainContent, and Footer components:
+    _ import Header from "./Header";
+    _ import MainContent from "./MainContent";
+    _ import Footer from "./Footer";
 
     2. Inside the App component's return statement, render the three components inside a single <div>, in the following order:
         * Header
@@ -91,7 +94,13 @@ _ A <p> element that dynamically displays the current date. 4. Use JavaScript ex
 _ A name variable containing a name, such as "Bunty"
 _ A new Date() object to display the current date.
 
-_| Step 2: Create a ProductInfo Component_ 1. Create a new file called ProductInfo.jsx. 2. Inside this file, create a functional component named ProductInfo. 3. The ProductInfo component should return a <div> that dynamically displays product details: \* Use a product object that contains the following properties: - name: "Laptop", - price: "$500", - availability: "In stock" 4. Display the product name, price, and availability using {}.
+_| Step 2: Create a ProductInfo Component_ 1. Create a new file called ProductInfo.jsx. 2. Inside this file, create a functional component named ProductInfo. 3. The ProductInfo component should return a <div> that dynamically displays product details:
+Use a product object that contains the following properties: - name: "Laptop",
+
+        - price: "$500",
+
+        - availability: "In stock"
+    4. Display the product name, price, and availability using {}.
 
 _| Step 3: Render Components in App.jsx_ 1. In App.jsx file, import the Greeting and ProductInfo components 2. Inside the App component's return statement, render both components.
 
@@ -167,6 +176,7 @@ hobbies={["Coding", "Reading", "Sleeping"]}
 
 const User = (props) => {
 return (
+
 <section>
 <img src={props.img} alt={props.name} width={200} />
 <h1>Name: {props.name}</h1>
@@ -223,6 +233,7 @@ const ValidPassword = () => <h1>Valid Password</h1>
 const InvalidPassword = () => <h1>Invalid Password</h1>
 
 const Password = ({isValid}) => {
+
 <!--
     if(isValid) {
         return <ValidPassowrd />;
@@ -244,6 +255,7 @@ const Cart = () => {
 const items = ["Wireless Earbuds", "Power Bank", "New SSD", "Hoddie"]
 return (
 <>
+
 <h1> Cart 🛒 </h1>
 {items.length > 0 && <h2> You have {items.length} items in your Cart.</h2>}
 
@@ -312,3 +324,40 @@ _ Set border radius to 10px.
 _ Set text color to dark blue. 4. Render a <div> with a title and description inside it.
 
 _Step 2: Create a ProfileCard Component with Separate Style Object_
+    1. Create a new file called ProfileCard.jsx.
+    2. Inside this file, create a functional component called ProfileCard.
+    3. Define a styles object to hold the CSS properties:
+        _ Set the background color to light gray.
+        _ Set padding to 15px.
+        _ Set border radius to 8px.
+        _ Set text color to dark black.
+    4. Apply the styles object to the <div> using the style attribute.
+    5. Render a <div> with a title and description inside it.
+
+_Step 3: Create a IconComponent Using React Icons_
+    1. Install react-icons if you haven't already:
+
+        npm install react-icons
+    
+    2. Create a new file called IconComponent called IconComponent.
+    3. Inside this file, create a functional component called IconComponent:
+    4. Import an icon from react-icons, such as FaBeer from react-icons/fa
+    5. Style the icon using inline styles:
+        _ Set the font size to 38px
+        _ Set the color to gold
+    6. Render the icon with a title.
+
+_Step 4: Render All Components in App. jsx_
+    1.In your App.jsx file, import the StyledCard, ProfileCard, and IconComponent components: |
+    2. Inside the App component, render all three components: |
+
+        function App() {
+            return (
+                <div>
+                    <StyledCard />
+                    <ProfileCard />
+                    <IconComponent />
+                </div>
+            );
+        }   
+        export default App;
