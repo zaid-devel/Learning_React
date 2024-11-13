@@ -20,9 +20,12 @@ A component is a piece of UI that has it's own logic and appearance. A component
 
 In this exercise, we will learn how to create multiple components and render one component inside another.
 
-_| Step 1: Create a Header Component_  1. Create a new file called Header.jsx. 2. Inside this file, create a functional component named Header. 3. The Header component should return a <header> relement with the following:
-_ '<h1>' element with the text "Welcome to my Website!"
-_ <nav> element containing three links (<a>) with the text "Home", "About", and "Contact".
+_| Step 1: Create a Header Component_ 
+1. Create a new file called Header.jsx.
+2. Inside this file, create a functional component named Header.
+3. The Header component should return a header element with the following:
+    _ Header element with the text "Welcome to my Website!"
+    _ Nav element containing three links with the text "Home", "About", and "Contact".
 
 _| Step 2: Create a Footer Component_ 1. Create a new file called Footer.jsx. 2. Inside this file, create a functional component named Footer. 3. The Footer component should return a <footer> element with a <p> containing the text "@ 2024 My Website"
 
