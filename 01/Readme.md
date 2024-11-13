@@ -12,17 +12,17 @@ Open Source: Being open source means that React's source code is freely availabl
 
 --> Learn Once, Write Aywhere
 
-# React is the most popular, powerfull front-end library developed and sponsored by Facebook.
+React is the most popular, powerfull front-end library developed and sponsored by Facebook.
 
-# A component is a piece of UI that has it's own logic and appearance. A component can be small as a button or large as entire page.
+A component is a piece of UI that has it's own logic and appearance. A component can be small as a button or large as entire page.
 
-- Exercise 1: Rendering Multiple Components and Nesting Components
+# Exercise 1: Rendering Multiple Components and Nesting Components
 
 In this exercise, we will learn how to create multiple components and render one component inside another.
 
-_| Step 1: Create a Header Component_ 1. Create a new file called Header.jsx. 2. Inside this file, create a functional component named Header. 3. The Header component should return a <header> relement with the following:
-_ A <h1> element with the text "Welcome to my Website!"
-_ A <nav> element containing three links (<a>) with the text "Home", "About", and "Contact".
+_| Step 1: Create a Header Component_  1. Create a new file called Header.jsx. 2. Inside this file, create a functional component named Header. 3. The Header component should return a <header> relement with the following:
+_ '<h1>' element with the text "Welcome to my Website!"
+_ <nav> element containing three links (<a>) with the text "Home", "About", and "Contact".
 
 _| Step 2: Create a Footer Component_ 1. Create a new file called Footer.jsx. 2. Inside this file, create a functional component named Footer. 3. The Footer component should return a <footer> element with a <p> containing the text "@ 2024 My Website"
 
@@ -323,22 +323,16 @@ _ Set padding to 20px.
 _ Set border radius to 10px.
 _ Set text color to dark blue. 4. Render a <div> with a title and description inside it.
 
-_Step 2: Create a ProfileCard Component with Separate Style Object_
-    1. Create a new file called ProfileCard.jsx.
-    2. Inside this file, create a functional component called ProfileCard.
-    3. Define a styles object to hold the CSS properties:
-        _ Set the background color to light gray.
-        _ Set padding to 15px.
-        _ Set border radius to 8px.
-        _ Set text color to dark black.
-    4. Apply the styles object to the <div> using the style attribute.
-    5. Render a <div> with a title and description inside it.
+_Step 2: Create a ProfileCard Component with Separate Style Object_ 1. Create a new file called ProfileCard.jsx. 2. Inside this file, create a functional component called ProfileCard. 3. Define a styles object to hold the CSS properties:
+_ Set the background color to light gray.
+_ Set padding to 15px.
+_ Set border radius to 8px.
+_ Set text color to dark black. 4. Apply the styles object to the <div> using the style attribute. 5. Render a <div> with a title and description inside it.
 
-_Step 3: Create a IconComponent Using React Icons_
-    1. Install react-icons if you haven't already:
+_Step 3: Create a IconComponent Using React Icons_ 1. Install react-icons if you haven't already:
 
         npm install react-icons
-    
+
     2. Create a new file called IconComponent called IconComponent.
     3. Inside this file, create a functional component called IconComponent:
     4. Import an icon from react-icons, such as FaBeer from react-icons/fa
@@ -348,8 +342,7 @@ _Step 3: Create a IconComponent Using React Icons_
     6. Render the icon with a title.
 
 _Step 4: Render All Components in App. jsx_
-    1.In your App.jsx file, import the StyledCard, ProfileCard, and IconComponent components: |
-    2. Inside the App component, render all three components: |
+1.In your App.jsx file, import the StyledCard, ProfileCard, and IconComponent components: | 2. Inside the App component, render all three components: |
 
         function App() {
             return (
@@ -358,6 +351,6 @@ _Step 4: Render All Components in App. jsx_
                     <ProfileCard />
                     <IconComponent />
                 </div>
-            ); 
-        }   
+            );
+        }
         export default App;
