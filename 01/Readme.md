@@ -24,8 +24,8 @@ _| Step 1: Create a Header Component_
 1. Create a new file called Header.jsx.
 2. Inside this file, create a functional component named Header.
 3. The Header component should return a header element with the following:
-    _ Header element with the text "Welcome to my Website!"
-    _ Nav element containing three links with the text "Home", "About", and "Contact".
+    Header element with the text "Welcome to my Website!"
+    Nav element containing three links with the text "Home", "About", and "Contact".
 
 _| Step 2: Create a Footer Component_ 1. Create a new file called Footer.jsx. 2. Inside this file, create a functional component named Footer. 3. The Footer component should return a <footer> element with a <p> containing the text "@ 2024 My Website"
 
