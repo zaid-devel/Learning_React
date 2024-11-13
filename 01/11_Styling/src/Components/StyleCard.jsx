@@ -9,4 +9,4 @@ function StyleCard() {
   )
 }
 
-export default StyleCard
+export default StyleCard 

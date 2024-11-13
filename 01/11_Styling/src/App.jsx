@@ -23,7 +23,7 @@ const App = () => {
       <StyleCard />
       <ProfileCard />
       <IconComponent />
-    </div>
+    </div>  
   )
 }
 
