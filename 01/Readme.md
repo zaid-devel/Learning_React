@@ -33,14 +33,14 @@ _| Step 1: Create a Header Component_
 _| Step 2: Create a Footer Component_
 1. Create a new file called Footer.jsx.
 2. Inside this file, create a functional component named Footer.
-3. The Footer component should return a <footer> element with a <p> containing the text "@ 2024 My Website".
+3. The Footer component should return a footer element with a paragraph containing the text "@ 2024 My Website".
 
 _| Step 3: Create MainContent Component_
 1. Create a new file called MainContent.jsx.
 2. Inside this file, create a functional component named MainContent.
-3. The MainContent component should return a <main> element containing:
-- <h2> element with the text "Main Content".
-- <p> element with any text of your choice.
+3. The MainContent component should return a main element containing:
+- heading element with the text "Main Content".
+- paragraph element with any text of your choice.
 
 _| Step 4: Render Component inside App.jsx_
 1. In App.jsx file, import the Header, MainContent, and Footer components:
@@ -48,7 +48,7 @@ _| Step 4: Render Component inside App.jsx_
     - import MainContent from "./MainContent";
     - import Footer from "./Footer";
 
-2. Inside the App component's return statement, render the three components inside a single <div>, in the following order:
+2. Inside the App component's return statement, render the three components inside a single div, in the following order:
     - Header
     - MainContent
     - Footer
@@ -73,7 +73,7 @@ In this exercise, we will practice basic JSX code and rendering it in a React ap
 _| Step 1: Create a New Component_
 1. Create a file called WelcomeMessage.jsx.
 2. Inside this file, write a functional component called WelcomeMessage.
-3. The component should return a <div> that contains:
+3. The component should return a `<div>` that contains:
 - <h1> element that display the message: "Heyy, World!"
 - <p> element that display the message: "Welcome to learning JSX!"
 
