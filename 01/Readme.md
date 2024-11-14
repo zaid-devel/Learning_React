@@ -33,14 +33,14 @@ _| Step 1: Create a Header Component_
 _| Step 2: Create a Footer Component_
 1. Create a new file called Footer.jsx.
 2. Inside this file, create a functional component named Footer.
-3. The Footer component should return a footer element with a paragraph containing the text "@ 2024 My Website".
+3. The Footer component should return a `<footer>` element with a `<p>` containing the text "@ 2024 My Website".
 
 _| Step 3: Create MainContent Component_
 1. Create a new file called MainContent.jsx.
 2. Inside this file, create a functional component named MainContent.
-3. The MainContent component should return a main element containing:
-- heading element with the text "Main Content".
-- paragraph element with any text of your choice.
+3. The MainContent component should return a `<main>` element containing:
+- `<h2>` element with the text "Main Content".
+- `<p>` element with any text of your choice.
 
 _| Step 4: Render Component inside App.jsx_
 1. In App.jsx file, import the Header, MainContent, and Footer components:
@@ -48,7 +48,7 @@ _| Step 4: Render Component inside App.jsx_
     - import MainContent from "./MainContent";
     - import Footer from "./Footer";
 
-2. Inside the App component's return statement, render the three components inside a single div, in the following order:
+2. Inside the App component's return statement, render the three components inside a single `<div>`, in the following order:
     - Header
     - MainContent
     - Footer
@@ -74,8 +74,8 @@ _| Step 1: Create a New Component_
 1. Create a file called WelcomeMessage.jsx.
 2. Inside this file, write a functional component called WelcomeMessage.
 3. The component should return a `<div>` that contains:
-- <h1> element that display the message: "Heyy, World!"
-- <p> element that display the message: "Welcome to learning JSX!"
+- `<h1>` element that display the message: "Heyy, World!"
+- `<p>` element that display the message: "Welcome to learning JSX!"
 
 _| Step 2: Render the Component in App.jsx_
 1. Open the App.jsx file.
@@ -92,9 +92,9 @@ _| Step 1: Create a New Component_
 1. Create a new file called JSXRules.jsx.
 2. Inside this file, Write a functional component called JSXRules.
 
-The component should return a <div> containing the following:
-- <h1> element with the text "JSX Rules".
-- paragraph (<p>) that list atleast three rules of JSX:
+The component should return a `<div>` containing the following:
+- `<h1>` element with the text "JSX Rules".
+- paragraph (`<p>`) that list atleast three rules of JSX:
   - JSX must return a single parent element.
   - JSX element must return a single parent element.
   - JSX attributes are written using camelCase (e.g., className instead of class).
@@ -119,9 +119,9 @@ return <p>{2 + 2}</p> // will return 4
 _| Step 1: Create a New Component_
 1. Create a Greeting Component.
 2. Inside this file, create a functional component named Greeting.
-3. The Greeting component should return a <div> containing:
-- <h1> element that dynamically displays a greeting message.
-- <p> element that dynamically displays the current date.
+3. The Greeting component should return a `<div>` containing:
+- `<h1>` element that dynamically displays a greeting message.
+- `<p>` element that dynamically displays the current date.
 4. Use JavaScript expressions inside {} to dynamically render the following:
 - name variable containing a name, such as "Bunty"
 - new Date() object to display the current date.
@@ -129,7 +129,7 @@ _| Step 1: Create a New Component_
 _| Step 2: Create a ProductInfo Component_
 1. Create a new file called ProductInfo.jsx.
 2. Inside this file, create a functional component named ProductInfo.
-3. The ProductInfo component should return a <div> that dynamically displays product details:
+3. The ProductInfo component should return a `<div>` that dynamically displays product details:
 Use a product object that contains the following properties:
 - name: "Laptop",
 - price: "$500",
@@ -159,7 +159,7 @@ const user = [
     { id: 3, name: 'Charlie', age: 22}
 ]
 ```
-4. Use the .map() method to render a list of users. Each user's name and age should be displayed inside a <div> element. Use the id as the unique key for each list item.
+4. Use the .map() method to render a list of users. Each user's name and age should be displayed inside a `<div>` element. Use the id as the unique key for each list item.
 
 _| Step 2: Create a ProductList Component_
 1. Create a new file called ProductList.jsx.
@@ -172,7 +172,7 @@ const product = [
     {id: 3, name: 'Headphone', price: '$200'},
 ];
 ```
-4. Use the .map() method to render the list of products. Each product's name and price ahould be displayed inside a <div> element. Use the id as the key for each product.
+4. Use the .map() method to render the list of products. Each product's name and price ahould be displayed inside a `<div>` element. Use the id as the key for each product.
 
 _| Step 3: Render the Component in App.jsx_
 1. In App.jsx file, import the UserList and ProductList components:
@@ -241,15 +241,15 @@ _Step 1: Create a Person Component_
 1. Create a new file called Person.jsx.
 2. Inside this file, create a functional component called Person.
 3. This component should accept props and render:
-- <h2> element that displays the person's name.
-- <p> element that displays the person's age. 4. Use props.name and props.age to display the dynamic values passed from the parent component.
+- `<h2>` element that displays the person's name.
+- `<p>` element that displays the person's age. 4. Use props.name and props.age to display the dynamic values passed from the parent component.
 
 _Step 2: Create a Product Component_
 1. Create a new file called Product.jsx.
 2. Inside this file, create a functional component called Product.
 3. This component should accept props and render:
-- <h2> element that displays the products's name.
-- <p> element that displays the products's price.
+- `<h2>` element that displays the products's name.
+- `<p>` element that displays the products's price.
 4. Use props.name and props.price to display the values passed from the parent component.
 
 _Step 3: Pass Props from App.jsx_
@@ -276,8 +276,8 @@ return <h1>Please sign in.</h1>;
 
 How it works:
 
-If `isLoggedIn` is true, it shows "Welcome back!"
-If `isLoggedIn` is false, it shows "Please sign in."
+If `isLoggedIn` is true, it shows "`Welcome back!`"
+If `isLoggedIn` is false, it shows "`Please sign in.`"
 You use conditional rendering when you want your app to show different things depending on certain conditions (like login status, user actions, etc.).
 
 Example 2:
@@ -393,7 +393,7 @@ _Step 1: Create a StyleCard Component with Inline Styles_
 - Set padding to 20px.
 - Set border radius to 10px.
 - Set text color to dark blue.
-4. Render a <div> with a title and description inside it.
+4. Render a `<div>` with a title and description inside it.
 
 _Step 2: Create a ProfileCard Component with Separate Style Object_
 1. Create a new file called ProfileCard.jsx.
@@ -403,8 +403,8 @@ _Step 2: Create a ProfileCard Component with Separate Style Object_
 - Set padding to 15px.
 - Set border radius to 8px.
 - Set text color to dark black.
-4. Apply the styles object to the <div> using the style attribute.
-5. Render a <div> with a title and description inside it.
+4. Apply the styles object to the `<div>` using the style attribute.
+5. Render a `<div>` with a title and description inside it.
 
 _Step 3: Create a IconComponent Using React Icons_
 1. Install react-icons if you haven't already:
