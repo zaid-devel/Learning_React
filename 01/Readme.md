@@ -39,8 +39,8 @@ _| Step 3: Create MainContent Component_
 1. Create a new file called MainContent.jsx.
 2. Inside this file, create a functional component named MainContent.
 3. The MainContent component should return a <main> element containing:
-   - A <h2> element with the text "Main Content".
-   - A <p> element with any text of your choice.
+- <h2> element with the text "Main Content".
+- <p> element with any text of your choice.
 
 _| Step 4: Render Component inside App.jsx_
 1. In App.jsx file, import the Header, MainContent, and Footer components:
