@@ -84,7 +84,7 @@ _| Step 2: Render the Component in App.jsx_
 
 _| Step 3: Run the Application_ 
 1. Run the app 
-2. We should see the "Hello World!" message along with "Welcome to learning JSX!" displayed in your browser.
+2. We should see the "Hello World!" message along with "Welcome to learning JSX!" displayed in our browser.
 
 # Exercise 3: JSX Rules Exercise
 
@@ -331,7 +331,10 @@ _Step 1: Create a Weather Component with if, else if, and else_
 2. Inside this file, create a functional component called Weather.
 3. The component should:
 - Take a temperature prop.
-- Use if, else id and else statements to conditionally render different messages based on the temperature value. - if the temperature is below 15, display: "It's cold outside!" - if the temperature is between 15 and 25, display: "It's nice outside!" - if the temperature is above 25, display: "It's hot outside!"
+- Use if, else if and else statements to conditionally render different messages based on the temperature value.
+  - if the temperature is below 15, display: "It's cold outside!"
+  - if the temperature is between 15 and 25, display: "It's nice outside!"
+  - if the temperature is above 25, display: "It's hot outside!"
 
 _Step 2: Create a UserStatus Component with && Operator_
 1. Create a new file called UserStatus.jsx.
