@@ -1,4 +1,4 @@
-* REACT
+# REACT
 
 **React** is a free and open-source JavaScript library specially designed for building user interfaces (UIs)
 
