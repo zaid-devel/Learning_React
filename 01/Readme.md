@@ -436,4 +436,20 @@ function App() {
     );
 }
 export default App;
-``` 
+```
+# State and Hooks
+
+## State
+
+State is a way to store and manage data that can change over time and affects how the component renders. We define state using the useState Hook, which allows us to set an initial value and provides a way to update that state.
+
+## Hooks
+
+Hooks are a new addition in React 16.8. They let us use state and other react features without writing a class.
+
+### useState() Hook:
+useState Hook allows us to **track state** in a functional component. State generally refers to data or properties that need to be tracking in an application.
+
+![useState](https://i.ibb.co/t39VDJg/Screenshot-2024-11-14-212624.png)
+
+
