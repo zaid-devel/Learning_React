@@ -4,6 +4,12 @@ import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
+module.exports = {
+  rules: {
+    'react/react-in-jsx-scope': 'off', // Disable the rule for React 17 and later
+  },
+};
+
 export default [
   { ignores: ['dist'] },
   {
