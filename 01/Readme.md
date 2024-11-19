@@ -492,18 +492,18 @@ _Step 4: useState with an Array of Objects_
 
 _Step 5: Render All Components in App.jsx_
 1. In App.jsx file, import the Counter, TodoList, Profile, and ShoppingList components:
-    ```javascript
-    import Counter from "./Counter";
-    import TodoList from "./TodoList";
-    import Profile from "./Profile";
-    import ShoppingList fron "./Shoppinglist";
-    ```
+```javascript
+import Counter from "./Counter";
+import TodoList from "./TodoList";
+import Profile from "./Profile";
+import ShoppingList fron "./Shoppinglist";
+```
 2. Inside the App component, render all four components:
 ```javascript
 function App() {
 return (
 <div>
-<hl>React useState Examples</hl>
+<h1>React useState Examples</h1>
 <Counter />
 <TodoList />
 <Profile />
@@ -512,4 +512,4 @@ return (
 );
 }
 export default App;
-```
+``` 
