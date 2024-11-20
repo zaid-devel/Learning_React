@@ -6,6 +6,6 @@ const IconComponent = () => {
         Beer <FaBeer /> 
     </div>
   )
-}
+} 
 
 export default IconComponent

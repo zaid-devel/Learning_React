@@ -8,5 +8,5 @@ function StyleCard() {
     </div>
   )
 }
-
+ 
 export default StyleCard 

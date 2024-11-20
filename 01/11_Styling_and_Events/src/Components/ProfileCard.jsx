@@ -6,7 +6,7 @@ function ProfileCard() {
         color: 'darkblack'
     }
 
-  return (
+  return ( 
     <div style={style}>
         <div>
             <h1>Title 2</h1>
