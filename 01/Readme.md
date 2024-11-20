@@ -520,9 +520,9 @@ A Portal in React lets us render a child component outside the usual structure o
 
 This is helpful in cases where you need to display things like:
 
-    - Modals (pop-up windows)
-    - Tooltips (small help messages)
-    - Dropdowns (lists that appear when clicking a button)
+- Modals (pop-up windows)
+- Tooltips (small help messages)
+- Dropdowns (lists that appear when clicking a button)
 
 These UI elements often need to appear above or outside the regular layout, and a portal allows us to do that without changing how the components are structured in React.
 
