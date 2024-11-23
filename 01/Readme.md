@@ -630,7 +630,7 @@ _Step 2: UseEffect with Dependencies_
     - Use useEffect to update the document ttle whenever count changes.
 
 _Step 3: useEffect for Fetching Data_
-1. Create a new fle called FetchDataEffect.jsx
+1. Create a new file called FetchDataEffect.jsx
 2. Inside this file, create a functional component called FetchDataEffect
 3. Use useEffect to fetch data from an API when the component mounts.
     - Use the API endpoint https: // jsonplaceholder.typicode.com/posts to fetch some data.
