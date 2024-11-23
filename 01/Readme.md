@@ -619,19 +619,19 @@ In this exercise, we'll practice using the `useEFfect` hook in different scenari
 _Step 1: Basic Usage of useEffect_
 1. Create a new file called BasicEffect.jsx
 2. Inside this file, create a functional component called BasicEffect.
-3. Use useEFFect to log a message to the console whenever the component mounts (i.e, when it's rendered the first time).
+3. Use useEffect to log a message to the console whenever the component mounts (i.e, when it's rendered the first time).
 
 _Step 2: UseEffect with Dependencies_
 1. Create a new file called CounterEffect.jsx
 2. Inside this file, create a functional component called CounterEffect.
 3. Use useEffect to update the document title whenever a counter value changes.
-- Initialize a count state with 0 using useState.
-- Render a button that increments the count.
-- Use useEFfect to update the document ttle whenever count changes.
+    - Initialize a count state with 0 using useState.
+    - Render a button that increments the count.
+    - Use useEffect to update the document ttle whenever count changes.
 
 _Step 3: useEffect for Fetching Data_
 1. Create a new fle called FetchDataEffect.jsx
 2. Inside this file, create a functional component called FetchDataEffect
-3. Use useEFfect to fetch data from an AP| when the component mounts.
-  - Use the API endpoint https: // jsonplaceholder.typicode.com/posts to fetch some data.
-  - Store the data in a state variable and display the title of the first post.
+3. Use useEffect to fetch data from an API when the component mounts.
+    - Use the API endpoint https: // jsonplaceholder.typicode.com/posts to fetch some data.
+    - Store the data in a state variable and display the title of the first post.
