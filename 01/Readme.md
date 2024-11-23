@@ -625,15 +625,14 @@ _Step 2: UseEffect with Dependencies_
 1. Create a new file called CounterEffect.jsx
 2. Inside this file, create a functional component called CounterEffect.
 3. Use useEffect to update the document title whenever a counter value changes.
-       - Initialize a count state with 0 using useState.
-       - Render a button that increments the count.
-       - Use useEffect to update the document ttle whenever count changes.
+    - Initialize a count state with 0 using useState.
+    - Render a button that increments the count.
+    - Use useEffect to update the document ttle whenever count changes.
 
 _Step 3: useEffect for Fetching Data_
 1. Create a new fle called FetchDataEffect.jsx
 2. Inside this file, create a functional component called FetchDataEffect
 3. Use useEffect to fetch data from an API when the component mounts.
-       - Use the API endpoint https: // jsonplaceholder.typicode.com/posts to fetch some data.
-       - Store the data in a state variable and display the title of the first post.
+    - Use the API endpoint https: // jsonplaceholder.typicode.com/posts to fetch some data.
+    - Store the data in a state variable and display the title of the first post.
 
-       
