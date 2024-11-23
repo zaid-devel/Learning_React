@@ -636,3 +636,19 @@ _Step 3: useEffect for Fetching Data_
     - Use the API endpoint [https: // jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts) to fetch some data.
     - Store the data in a state variable and display the title of the first post.
 
+
+# Prop Drilling
+
+Prop drilling is a term in React that refers to the process of passing data from a parent component to a deeply nested child component through multiple levels of intermediate components.
+
+Simple Explanation:
+Imagine we have a component structure like this:
+
+    ```
+    Parent
+      └── Child1
+            └── Child2
+                  └── Child3
+    ```
+
+Prop drilling happens when we need to pass data from the Parent component to Child3, but instead of passing the data directly from Parent to Child3, we have to pass it through Child1 and Child2 first.
