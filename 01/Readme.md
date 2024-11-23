@@ -652,3 +652,51 @@ Parent
 ```
 
 Prop drilling happens when we need to pass data from the Parent component to Child3, but instead of passing the data directly from Parent to Child3, we have to pass it through Child1 and Child2 first.
+
+Example:
+Let’s say the Parent component has a piece of state, and we want to pass it to Child3.
+
+```js
+function Parent() {
+  const [message, setMessage] = useState("Hello from Parent!");
+
+  return (
+    <div>
+      <Child1 message={message} />
+    </div>
+  );
+}
+
+function Child1({ message }) {
+  return (
+    <div>
+      <Child2 message={message} />
+    </div>
+  );
+}
+
+function Child2({ message }) {
+  return (
+    <div>
+      <Child3 message={message} />
+    </div>
+  );
+}
+
+function Child3({ message }) {
+  return <h1>{message}</h1>;
+}
+```
+
+## How Prop Drilling Works:
+
+- The Parent component has the state message.
+- Parent passes message to Child1 as a prop.
+- Child1 passes it down to Child2.
+- Child2 then passes it down to Child3.
+- Finally, Child3 displays the message.
+
+## Problem with Prop Drilling:
+
+If we have a lot of nested components, we might need to pass data through many layers, even if some of the intermediate components don’t need it.
+This can make the code harder to maintain and understand because we're passing props that aren’t directly used by all components in the chain.
