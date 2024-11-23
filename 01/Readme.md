@@ -644,11 +644,11 @@ Prop drilling is a term in React that refers to the process of passing data from
 Simple Explanation:
 Imagine we have a component structure like this:
 
-    ```
-    Parent
-      └── Child1
-            └── Child2
-                  └── Child3
-    ```
+```
+Parent
+  └── Child1
+        └── Child2
+              └── Child3
+```
 
 Prop drilling happens when we need to pass data from the Parent component to Child3, but instead of passing the data directly from Parent to Child3, we have to pass it through Child1 and Child2 first.
