@@ -555,8 +555,7 @@ If our effect creates something (like an API request or a timer), we might want 
 
 Example:
 
-```js
-Copy code
+```javascript
 useEffect(() => {
   const timer = setInterval(() => console.log('Tick'), 1000);
   
