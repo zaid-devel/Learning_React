@@ -518,7 +518,7 @@ export default App;
 
 A Portal in React lets us render a child component outside the usual structure of the parent component. Normally, React renders child components inside the parent, but with a portal, we can place them anywhere in the DOM, even outside of the parent component’s hierarchy.
 
-This is helpful in cases where you need to display things like:
+This is helpful in cases where we need to display things like:
 
 - Modals (pop-up windows)
 - Tooltips (small help messages)
@@ -526,3 +526,88 @@ This is helpful in cases where you need to display things like:
 
 These UI elements often need to appear above or outside the regular layout, and a portal allows us to do that without changing how the components are structured in React.
 
+# useEffect()
+
+useEffect is a hook in React that lets us run some code when certain things happen in our component. It’s like saying, "Hey, React, when this happens, do something for us."
+
+## 1. Running code after rendering
+useEffect runs after every time our component renders. It’s useful for tasks like fetching data or updating the DOM.
+Example:
+```javascript
+useEffect(() => {
+  console.log('This runs after the component renders');
+});
+```
+## 2. Run code when certain things change
+We can tell useEffect to only run when specific data changes. This is done by passing a list of values (called "dependencies").
+
+Example:
+
+```javascript
+useEffect(() => {
+  console.log('This runs only when "count" changes');
+}, [count]); // "count" is the dependency
+```
+In this case, useEffect runs only when the count variable changes.
+
+## 3. Clean up after ourselves
+If our effect creates something (like an API request or a timer), we might want to clean it up when the component is removed or before the effect runs again. We can do that by returning a function inside useEffect.
+
+Example:
+
+```js
+Copy code
+useEffect(() => {
+  const timer = setInterval(() => console.log('Tick'), 1000);
+  
+  // Clean up function
+  return () => clearInterval(timer); // This runs when the component unmounts or effect changes
+}, []); // Empty array means it runs only once when the component is mounted
+```
+### In summary:
+- Without dependencies: Runs after every render.
+- With dependencies: Runs only when the dependencies change.
+- Clean up: We can return a function inside useEffect to clean up after our effect.
+
+### Note:
+In React, hooks like useState, useEffect, and others must be used at the top level of a component, unconditionally. This means we cannot call hooks inside conditional statements, loops, or nested functions. React enforces this rule to ensure hooks are called in the same order on every render, which is critical for React to track state and effects correctly.
+
+1. Incorrect Example (Hook inside a conditional):
+
+```javascript
+import React, { useState } from 'react';
+
+function MyComponent() {
+  if (true) {
+    const [count, setCount] = useState(0);  // This is incorrect!
+  }
+
+  return <div>Count: {count}</div>;
+}
+```
+- Why it's wrong:
+
+useState is called conditionally inside if (true).
+This means React might not call the hook every time the component renders, causing errors.
+
+
+2. Correct Example (Hook outside conditionals):
+
+```javascript
+import React, { useState } from 'react';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);  // Hook called unconditionally
+
+  if (count > 0) {
+    return <div>Count is greater than 0</div>;
+  }
+
+  return <div>Count is 0</div>;
+}
+```
+
+- Why it's correct:
+
+useState is called unconditionally at the top level of the component.
+We use a conditional (if (count > 0)) to decide what to display, but not to control the hook.
