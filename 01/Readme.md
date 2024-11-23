@@ -700,3 +700,13 @@ function Child3({ message }) {
 
 If we have a lot of nested components, we might need to pass data through many layers, even if some of the intermediate components don’t need it.
 This can make the code harder to maintain and understand because we're passing props that aren’t directly used by all components in the chain.
+
+## How to Solve Prop Drilling:
+
+We can avoid prop drilling by using React Context or state management libraries like Redux to directly provide the data to any component in the tree without passing it through each level.
+
+## Key Points:
+
+- Prop drilling happens when data is passed from a parent component to deeply nested child components, often through intermediate components that don’t need the data.
+- While simple, prop drilling can become a problem when we have many layers of components or need to share data at multiple levels.
+- It’s a common challenge in React applications, but solutions like Context or Redux can help manage this.
