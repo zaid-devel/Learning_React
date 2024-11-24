@@ -709,4 +709,4 @@ We can avoid prop drilling by using React Context or state management libraries 
 
 - Prop drilling happens when data is passed from a parent component to deeply nested child components, often through intermediate components that don’t need the data.
 - While simple, prop drilling can become a problem when we have many layers of components or need to share data at multiple levels.
-- It’s a common challenge in React applications, but solutions like Context or Redux can help manage this.
+- It’s a common challenge in React applications, but solutions like Context API or Redux can help manage this.
