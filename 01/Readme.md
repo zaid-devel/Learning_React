@@ -784,3 +784,61 @@ Using `MyContext.Consumer`:
 1. When we have global data that many components need to access (e.g., user authentication, theme, language).
 2. When prop drilling becomes difficult because we have many nested components and we don’t want to pass data through each level.
 3. For simple state management in small or medium-sized applications.
+
+## Limitations of Context API:
+
+1. Performance Considerations:
+  - Context updates cause all consuming components to re-render. If our context value changes frequently, it may cause unnecessary re-renders and affect performance.
+
+2. Not a Replacement for All State Management:
+  - While great for sharing global data, Context is not a full-fledged state management solution like Redux. For complex or large-scale state management, Redux or other state libraries may be a better fit.
+
+While the Context API is a powerful tool for sharing state across components, it comes with certain challenges that can cause problems in specific situations. Here are the key issues and an example to illustrate them:
+
+```javascript
+import { Data, Data1 } from "../App";
+
+const ComponentC = () => {
+  return (
+    <Data.Consumer>
+      {(name) => {
+        //return <h1>{name}</h1>
+        return (
+          <Data.Consumer>
+            {(age) => {
+              return<h1>My name is {name} and I'm {age} years old.</h1> // we have to return it because we are using curly braces
+            }}
+          </Data.Consumer>
+        )
+      }}
+    </Data.Consumer>
+  )
+}
+```
+
+### The Problem:  
+In this code, we are using `Data.Consumer` and `Data1.Consumer` to access values from two different context providers. This works, but it can be a bit complicated, especially if we need to access many pieces of data or if the component tree becomes bigger.
+
+### The Solution: `useContext` Hook
+Instead of using Consumer components, we can use the useContext hook, which makes everything much simpler.
+
+### Refactored Code
+We can replace the multiple Consumer components with the useContext hook. Here's how:
+
+```javascript
+import React, { useContext } from "react";
+import { Data, Data1 } from "../App";
+
+const ComponentC = () => {
+  // Get values from the context using useContext hook
+  const name = useContext(Data);  // This gives us the value from 'Data' context
+  const age = useContext(Data1);  // This gives us the value from 'Data1' context
+
+  return (
+    <h1>My name is {name} and I'm {age} years old</h1>
+  );
+};
+
+export default ComponentC;
+```
+So, instead of wrapping everything in multiple Consumer components, we use useContext to directly access the data from the context. It’s a simpler and cleaner way to work with context in React!
