@@ -701,6 +701,30 @@ function Child3({ message }) {
 If we have a lot of nested components, we might need to pass data through many layers, even if some of the intermediate components don’t need it.
 This can make the code harder to maintain and understand because we're passing props that aren’t directly used by all components in the chain.
 
+## What Happens if We Don't Pass Props?
+If we don’t pass the `message` from `Parent` to `Child1`, and from `Child1` to `Child2`, `Child3` will never get access to the `message` prop. Each component only gets the props that are directly passed to it, and it can’t access props from its parent or from any other component unless they are passed down.
+
+For example:
+```javascript
+function Parent() {
+  const message = "Hello from Parent!";
+  return <Child1 message={message} />;
+}
+
+function Child1() {  
+  // Missing the message prop here
+  return <Child2 />;  // It won't receive the message prop, hence cannot pass it down
+}
+
+function Child2() {
+  return <Child3 />;  // Same problem here
+}
+
+function Child3() {
+  return <h1>{message}</h1>;  // This will throw an error because 'message' is not passed to Child3
+}
+```
+
 ## How to Solve Prop Drilling:
 
 We can avoid prop drilling by using React Context or state management libraries like Redux to directly provide the data to any component in the tree without passing it through each level.
