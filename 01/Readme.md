@@ -710,3 +710,53 @@ We can avoid prop drilling by using React Context or state management libraries 
 - Prop drilling happens when data is passed from a parent component to deeply nested child components, often through intermediate components that don’t need the data.
 - While simple, prop drilling can become a problem when we have many layers of components or need to share data at multiple levels.
 - It’s a common challenge in React applications, but solutions like Context API or Redux can help manage this.
+
+
+# What is the Context API in React?
+
+The Context API in React allows us to share state or values across components without having to pass props through each level of the component tree. It helps solve the problem of prop drilling, where we have to pass data down to deeply nested components through intermediate layers.
+
+## How Does the Context API Work?
+
+The Context API consists of three main parts:
+1. `React.createContext()` — This creates the context object.
+2. `Provider` — This makes the context available to all components that need it.
+3. `Consumer` — This is used to access the context value inside a component.
+
+## Step-by-Step Explanation:
+
+1. Creating Context:
+- We first create a context object using `React.createContext()`. This object will hold the data we want to share.
+```javascript
+const MyContext = React.createContext();
+```
+
+2. Providing Context:
+- The `Provider` component allows us to make the context available to components. We wrap our components in the `Provider` and pass the data we want to share through the `value` prop.
+```javascript
+<MyContext.Provider value={someData}>
+  <App />
+</MyContext.Provider>
+```
+
+3. Consuming Context:
+- Any component inside the Provider can access the shared data through the context.
+Using `useContext` in a functional component:
+
+```javascript
+const data = useContext(MyContext);
+```
+
+Using `MyContext.Consumer`:
+
+```javascript
+<MyContext.Consumer>
+  {value => <div>{value}</div>}
+</MyContext.Consumer>
+```
+
+## When to Use the Context API?
+
+1. When we have global data that many components need to access (e.g., user authentication, theme, language).
+2. When prop drilling becomes difficult because we have many nested components and we don’t want to pass data through each level.
+3. For simple state management in small or medium-sized applications.
