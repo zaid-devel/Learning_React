@@ -842,3 +842,22 @@ const ComponentC = () => {
 export default ComponentC;
 ```
 So, instead of wrapping everything in multiple Consumer components, we use useContext to directly access the data from the context. It’s a simpler and cleaner way to work with context in React!
+
+
+# Exercise 11: Using Context and useContext in React
+
+In this exercise, we wil learn how to:
+- Create a Context.
+- Use `useContext` to access data from the Context.
+- Share state and functions between components without using props.
+_Step 1: Creating a Context_
+  1. Create a new fle called `UserContext.jsx`.
+  2. Inside this file, create a `UsenContext` and a `UsenProviden` component that will hold the shared state.
+
+_Step 2: Using `useContext` in Components_
+  1. Create a new fle called `UserProfile.jsx`.
+  2. Inside this file, create a functional component called `UserProfiLe`. This component will access the user data from `UsenContext` using the `UseContext` hook.
+
+_Step 3: Updating Context Data_
+  1. Create a new file called `UpdateUser.jsx`.
+  2. Inside this file, create a functional component called `UpdateUser` that allows the user to update their name.
