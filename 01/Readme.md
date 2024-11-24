@@ -850,6 +850,7 @@ In this exercise, we wil learn how to:
 - Create a Context.
 - Use `useContext` to access data from the Context.
 - Share state and functions between components without using props.
+
 _Step 1: Creating a Context_
   1. Create a new fle called `UserContext.jsx`.
   2. Inside this file, create a `UsenContext` and a `UsenProviden` component that will hold the shared state.
