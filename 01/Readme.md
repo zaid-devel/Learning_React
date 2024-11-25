@@ -995,3 +995,87 @@ function App() {
 }
 export default App;
 ```
+
+
+# useRef
+
+`useRef()` Hook provides a way to access and interact with DOM elements or to persist values across renders without causing a re-render.
+
+## Key Uses of `useRef()`
+
+1. Accessing DOM Elements: We can use `useRef()` to reference a DOM element, like a text input, button, or div, so we can interact with it directly.
+2. Storing Mutable Values: We can use `useRef()` to keep track of values between renders without triggering a re-render, like for keeping a previous state or for timers.
+
+### How does `useRef()` work?
+
+The `useRef()` hook returns an object with a current property. This current property can hold any mutable value we want, like a reference to a DOM element or a piece of data we want to keep between renders.
+
+```javascript
+const myRef = useRef(initialValue);
+```
+  - myRef.current: This will hold the current value.
+  - initialValue: This is the value we want to initialize it with (optional).
+
+## Examples of useRef()
+
+### 1. Accessing a DOM Element
+Let’s say we want to automatically focus an input field when the component mounts.
+
+```javascript
+import React, { useRef, useEffect } from 'react';
+
+function FocusInput() {
+  const inputRef = useRef(null); // Create a ref to hold the input element
+
+  useEffect(() => {
+    inputRef.current.focus(); // Focus the input when the component mounts
+  }, []);
+
+  return <input ref={inputRef} type="text" />;
+}
+
+export default FocusInput;
+```
+
+In this example:
+- We create `inputRef` using `useRef()`.
+- We attach `inputRef` to the ref attribute of the `<input>` element.
+- In the useEffect, we use `inputRef.current.focus()` to focus the input field after the component mounts.
+
+### 2. Storing Mutable Values
+We can use useRef to store a value that we don't want to cause a re-render when it changes.
+For example, let's track the previous value of a counter without causing a re-render:
+
+```javascript
+import React, { useState, useRef, useEffect } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  const prevCountRef = useRef();
+
+  useEffect(() => {
+    prevCountRef.current = count; // Store the current count value
+  }, [count]); // This effect runs whenever the count changes
+
+  return (
+    <div>
+      <p>Current Count: {count}</p>
+      <p>Previous Count: {prevCountRef.current}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+In this example:
+
+- We store the previous count value in `prevCountRef.current` without causing the component to re-render when it changes.
+- The `useEffect()` updates `prevCountRef.current` every time the count changes.
+
+## Key Points to Remember:
+
+- `useRef()` does not cause a re-render when its current value changes.
+- `useRef()` can hold any mutable value, including references to DOM elements or any other value we want to persist across renders.
+- It's different from `useState()` because updates to `useRef()` don't trigger a re-render, whereas `useState()` does.
