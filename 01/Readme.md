@@ -853,7 +853,7 @@ In this exercise, we wil learn how to:
 
 _Step 1: Creating a Context_
   1. Create a new fle called `UserContext.jsx`.
-  2. Inside this file, create a `UsenContext` and a `UsenProviden` component that will hold the shared state.
+  2. Inside this file, create a `UserContext` and a `UserProvider` component that will hold the shared state.
 
 _Step 2: Using `useContext` in Components_
   1. Create a new fle called `UserProfile.jsx`.
