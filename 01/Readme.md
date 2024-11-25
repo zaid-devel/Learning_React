@@ -883,7 +883,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
   - reducer: A function that determines how the state should change based on the action received.
   - initialState: The starting value of the state.
 
-[url=https://ibb.co/68cdgvM][img]https://i.ibb.co/68cdgvM/Screenshot-2024-11-25-221048.png[/img][/url]
+![Syntax](https://i.ibb.co/68cdgvM/Screenshot-2024-11-25-221048.png)
 
 ### The Reducer Function
 
