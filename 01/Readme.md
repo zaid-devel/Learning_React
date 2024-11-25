@@ -1079,3 +1079,17 @@ In this example:
 - `useRef()` does not cause a re-render when its current value changes.
 - `useRef()` can hold any mutable value, including references to DOM elements or any other value we want to persist across renders.
 - It's different from `useState()` because updates to `useRef()` don't trigger a re-render, whereas `useState()` does.
+
+# Exercise 13: Using useRef in React
+
+In this exercise, we will learn how to:
+  - Use `useRef()` to reference DOM elements.
+  - Use `UseRef()` to store values that persist between renders without triggering re-renders.
+
+_Step 1: Accessing a DOM Element with `useRef()`_
+1. create a new file called `Focusinput.jsx`.
+2. Inside this file, create a functional component that will focus on an input field when a button is clicked, using the `UseRef()` hook.
+
+_Step 2: Persisting Values Between Renders with `useRef()`_
+1. Create a new file called `Timer.jsx`.
+2. Inside this file, create a component that implements a simple timer, where the timer's interval is stored using `USeRef()`.
