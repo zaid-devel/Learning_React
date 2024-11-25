@@ -866,7 +866,7 @@ _Step 3: Updating Context Data_
 
 # useReducer()
 
-useReducer is a hook that is similar to useState, but it is designed for more complex state objects or state transitions that involves multiple sub-values. It allows us to manage state in a functional, immutable(unchangeable) way.
+`useReducer()` is a hook that is similar to `useState()`, but it is designed for more complex state objects or state transitions that involves multiple sub-values. It allows us to manage state in a functional, immutable(unchangeable) way.
 It works similarly to `useState()`, but instead of updating state directly with a value, it updates state by dispatching actions that describe how to change the state. It's useful for cases where you need to handle complex state updates like counters, lists, or managing multiple properties in an object.
 
 ## How Does `useReducer()` Work?
