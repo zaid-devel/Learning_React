@@ -1092,4 +1092,4 @@ _Step 1: Accessing a DOM Element with `useRef()`_
 
 _Step 2: Persisting Values Between Renders with `useRef()`_
 1. Create a new file called `Timer.jsx`.
-2. Inside this file, create a component that implements a simple timer, where the timer's interval is stored using `USeRef()`.
+2. Inside this file, create a component that implements a simple timer, where the timer's interval is stored using `UseRef()`.
