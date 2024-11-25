@@ -983,12 +983,12 @@ _Step 5: Rendering the Counter in `App.jsx`_
 1. In our `App.jsx` file, import and render the `Counter` component.
 ```javascript
 import React from "react";
-import Counter from "./Counter”;
+import Counter from "./Counter";
 
 function App() {
   return (
     <div>
-      <h1>React useReducer Example</hl>
+      <h1>React useReducer Example</h1>
       <Counter />
     </div>
   );
