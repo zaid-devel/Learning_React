@@ -862,3 +862,95 @@ _Step 2: Using `useContext` in Components_
 _Step 3: Updating Context Data_
   1. Create a new file called `UpdateUser.jsx`.
   2. Inside this file, create a functional component called `UpdateUser` that allows the user to update their name.
+
+
+# useReducer()
+
+useReducer is a hook that is similar to useState, but it is designed for more complex state objects or state transitions that involves multiple sub-values. It allows us to manage state in a functional, immutable(unchangeable) way.
+It works similarly to useState(), but instead of updating state directly with a value, it updates state by dispatching actions that describe how to change the state. It's useful for cases where you need to handle complex state updates like counters, lists, or managing multiple properties in an object.
+
+## How Does useReducer() Work?
+
+It uses two key things:
+1. State: The current state value.
+2. Dispatch: A function that is used to send actions to the reducer to update the state.
+
+### Basic Syntax
+
+``` javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+  - reducer: A function that determines how the state should change based on the action received.
+  - initialState: The starting value of the state.
+
+[url=https://ibb.co/68cdgvM][img]https://i.ibb.co/68cdgvM/Screenshot-2024-11-25-221048.png[/img][/url]
+
+### The Reducer Function
+
+The reducer function receives two arguments:
+1. state: The current state.
+2. action: An object that describes what happened, usually with a type property and an optional payload (additional data).
+It then returns a new state based on the action type.
+
+### Simple Example: Counter
+
+Let's walk through a simple example of a counter to better understand useReducer().
+1. Initial State: We'll start with a counter value of 0.
+2. Actions: We’ll create actions to increase and decrease the counter.
+
+### Step 1: Define the Reducer
+
+The reducer will handle the logic of how to update the counter state based on the action type.
+
+```javascript
+const initialState = { count: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+```
+
+### Step 2: Use useReducer() in the Component
+
+Now we can use the useReducer() hook in the component.
+
+```javascript
+import React, { useReducer } from 'react';
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: 'increment' })}>Increase</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrease</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+### Step 3: How It Works
+state.count: Displays the current counter value.
+dispatch({ type: 'increment' }): When the "Increase" button is clicked, it sends an action with type: 'increment', and the reducer will update the state by increasing the count by 1.
+dispatch({ type: 'decrement' }): Similarly, the "Decrease" button sends an action with type: 'decrement', which will decrease the count.
+
+### Comparison with useState()
+
+- useState() is great for simple state, like a single value or toggle.
+- useReducer() is better for complex state transitions, where multiple actions can change state in different ways (like a counter that can be incremented or decremented, or a form with multiple fields).
+
+### When to Use useReducer()
+
+- When we have complex state logic.
+- When we want better control over how state updates happen.
+- When state updates depend on previous states (for example, using counters, lists, or more complex forms).
