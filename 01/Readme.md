@@ -955,3 +955,43 @@ export default Counter;
 - When we want better control over how state updates happen.
 - When state updates depend on previous states (for example, using counters, lists, or more complex forms).
 
+
+# Exercise 12: Using useReducer in React
+
+In this exercise, we will learn how to:
+- Define a reducer function to manage state logic.
+- Use the `useReducer()` hook to manage complex state in a React component.
+- Dispatch actions to update state.
+
+
+_Step 1: Setting Up the Reducer Function_
+1. Create a new file called `counterReducer.jsx`.
+2. Inside this file, define a reducer function that will manage a simple counters state.
+
+_Step 2: Using `useReducer` Hook_
+1. Create a new file called `Counter.jsx`.
+2. inside this file, create a functional component called `Counter`.
+3. Use the `useReducer` hook to manage the state of the counter.
+
+_Step 3: Extending the Reducer with More Actions_
+1. Modify the `countenReducer.jsx` file to add more actions for increasing and decreasing by a specific amount.
+
+_Step 4: Using Payloads in Actions_
+1. Update the `Counter. jsx` fle to allow the user to increase or decrease the count by a specific value using an input feld.
+
+_Step 5: Rendering the Counter in `App.jsx`_
+1. In our `App.jsx` file, import and render the `Counter` component.
+```javascript
+import React from "react";
+import Counter from "./Counter”;
+
+function App() {
+  return (
+    <div>
+      <h1>React useReducer Example</hl>
+      <Counter />
+    </div>
+  );
+}
+export default App;
+```
