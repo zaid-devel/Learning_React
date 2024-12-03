@@ -1186,18 +1186,18 @@ function useFetch(url) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(url);
-        const result = await response.json();
-        setData(result);
+        const response = await fetch(url); // Fetch data from the provided URL.
+        const result = await response.json(); // Convert the response to JSON.
+        setData(result); // Set the fetched data to state.
       } catch (err) {
-        setError(err);
+        setError(err); // If an error occurs, update the error state.
       } finally {
-        setLoading(false);
+        setLoading(false); // When the fetch is complete, set loading to false.
       }
     };
 
-    fetchData();
-  }, [url]); // Re-run if the URL changes
+    fetchData(); // Invoke the function to fetch data.
+  }, [url]); // The effect depends on the `url` value, meaning it will re-run if the `url` changes.
 
   return { data, loading, error };
 }
@@ -1208,18 +1208,18 @@ export default useFetch;
 
 ```javascript
 import React from 'react';
-import useFetch from './useFetch';
+import useFetch from './useFetch'; // Import the custom hook.
 
 function App() {
-  const { data, loading, error } = useFetch('https://api.example.com/data');
+  const { data, loading, error } = useFetch('https://api.example.com/data'); // Call the hook with a URL.
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (loading) return <p>Loading...</p>; // Display loading message if the data is still being fetched.
+  if (error) return <p>Error: {error.message}</p>; // Display an error message if fetching fails.
 
   return (
     <div>
       <h1>Fetched Data</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <pre>{JSON.stringify(data, null, 2)}</pre> {/* Display the fetched data in a formatted JSON view.*/}
     </div>
   );
 }
@@ -1229,6 +1229,6 @@ export default App;
 
 ## Benefits of Custom Hooks:
 
-Clean Code: You can move complex logic outside the component, making your component code simpler and cleaner.
-Reusability: Custom hooks allow you to reuse the same logic in different parts of your application.
-Separation of Concerns: Custom hooks help separate state management and other logic from the component UI, following the principle of separation of concerns.
+1. Clean Code: You can move complex logic outside the component, making your component code simpler and cleaner.
+2. Reusability: Custom hooks allow you to reuse the same logic in different parts of your application.
+3. Separation of Concerns: Custom hooks help separate state management and other logic from the component UI, following the principle of separation of concerns.
