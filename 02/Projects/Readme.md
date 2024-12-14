@@ -2,4 +2,4 @@
 
 ## Project 1: Counter
 
-![Counter](https://streamable.com/e/7uml0g?)
+![Counter](https://i.ibb.co/PFZmQBX/Counter.gif)
