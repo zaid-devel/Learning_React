@@ -1232,3 +1232,11 @@ export default App;
 1. Clean Code: You can move complex logic outside the component, making your component code simpler and cleaner.
 2. Reusability: Custom hooks allow you to reuse the same logic in different parts of your application.
 3. Separation of Concerns: Custom hooks help separate state management and other logic from the component UI, following the principle of separation of concerns.
+
+
+
+# useId Hook
+The `useId()` hook in React is a simple and useful hook designed to help generate unique IDs for elements in a component, ensuring that each ID is consistent across re-renders. This is especially useful for accessibility (e.g., labeling form elements) or when you need unique identifiers in your UI.
+
+useId is a useful hook for generating unique, stable IDs for elements, especially in cases where we have multiple instances of a component or need to ensure consistency between server-side rendering and client-side rendering.
+
