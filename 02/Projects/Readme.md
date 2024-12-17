@@ -7,4 +7,10 @@
 
 ## Project 2: Todo
 
-![Counter](https://i.ibb.co/VjYYYyp/Todo.gif)
+![Todo](https://i.ibb.co/VjYYYyp/Todo.gif)
+
+
+## Project 3: Meals
+
+![Meals API](https://i.ibb.co/0JwCcLv/Meals.gif)
+
