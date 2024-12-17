@@ -16,3 +16,5 @@
 
 
 ## Project 4: Calculator
+
+![Calculator](https://i.ibb.co/jgmdV0v/Calculator.gif)
