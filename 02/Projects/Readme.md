@@ -12,5 +12,5 @@
 
 ## Project 3: Meals
 
-![Meals API](https://ibb.co/QKK2kgB)
+![Meals API](https://i.ibb.co/0JwCcLv/Meals.gif)
 
