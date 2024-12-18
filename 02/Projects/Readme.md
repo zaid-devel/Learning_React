@@ -24,6 +24,7 @@
 
 ![Toggle Background Color](https://i.ibb.co/NVjQnd7/Toggle-Background-Color.gif)
 
+
 ## Project 6: Hidden Search Bar
 
 ![Hidden Search Bar]()
