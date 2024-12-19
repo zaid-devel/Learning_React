@@ -29,14 +29,22 @@
 
 ![Hidden Search Bar](https://i.ibb.co/kDyws5c/Hidden-Search-Bar.gif)
 
+
 ## Project 7: Testimonials
 
 ![Testimonials](https://i.ibb.co/tzXz6D2/Testimonials.gif)
+
 
 ## Project 8: Accordions
 
 ![Accordions](https://i.ibb.co/sgQVD9x/Accordions.gif)
 
+
 ## Project 9: Form Validation
 
 ![Form Validation](https://i.ibb.co/ChJmN2Z/Form-Validation.gif)
+
+
+## Project 10: E-Commerce Advance Filtering
+
+![Form Validation]()
