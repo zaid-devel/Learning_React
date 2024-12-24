@@ -83,3 +83,32 @@ const MyComponent: React.FC<MyComponentProps> = ({ children }) => {
 ```
 
 In this example, children can be anything that is a valid React element, including a string ('Hello'), a number (123), or JSX elements like `<p>`Hello`</p>`. Using ReactNode makes sure that the children prop can accept any valid React content.
+
+
+# Exercise 1
+
+# Component Props Typing
+
+## Objective
+
+In this exercise, we'll practice typing props for a React component using TypeScript. we will create a simple `Button` component with typed props and then use it within a parent component.
+
+## Instructions
+
+_Step 1: Create the Button Component_
+1. Create new file named `Button.tsx` inthe `src` directory.
+2. Define `Button` component that accepts the following props:
+    - `label`: A string to display as the button’s text.
+    - `OnClick`: A function that gets called when the button is clicked.
+    - `disabled`: A boolean to indicate if the button is disabled.
+
+_Step 2: Use the `Button` Component_
+1. Open `App.tsx` (or create a new component)
+2. import and use the `Button` component, passing the appropriate props.
+
+_Step 3: Verify Our Types._
+1. Make sure our TypeScript compiler is not showing any type errors.
+2. Test the buttons in the browser to ensure they work as expected:
+    - The first button should display “Click Me” and show an alert when clicked.
+    - The second button should be disabled and should not trigger the alert.
+
