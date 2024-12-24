@@ -47,4 +47,4 @@
 
 ## Project 10: E-Commerce Advance Filtering
 
-![Form Validation](https://i.ibb.co/sQMNcTh/Advance-Filtering.gif)
+![E-Commerce Advance Filtering](https://i.ibb.co/sQMNcTh/Advance-Filtering.gif)
