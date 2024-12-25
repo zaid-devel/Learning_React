@@ -112,3 +112,26 @@ _Step 3: Verify Our Types._
     - The first button should display “Click Me” and show an alert when clicked.
     - The second button should be disabled and should not trigger the alert.
 
+
+# Reusable Props Typing
+
+## Objective
+
+In this exercise, we'll practice creating reusable prop types in TypeScript. we will define a set of reusable props for different types of user information and then apply the to multiple React companents.
+
+_Step 1: Define Reusable Types_
+1. Create a file named `types.ts` in the `src` directory.
+2. Define a base `Info` type and an extended `AdminInfoList` type in `types.ts`:
+  - `Info` Type: This type represents the base information shared by all users. It includes essential properties that any user will have like (id, name, email).
+
+_Step 2: Create UserInfo Component_
+1. Create a new file named `UserInfo.tsx` in the `src` directory.
+2. Create a `UserInfo` component that displays user information based on the `Info` type:
+
+_Step 3: Create AdminInfo Component_
+1. Create a new file named `AdminInfo.tsx` in the `src` directory.
+2. Create an AdminInfo component that displays user information and additional admin details based on the AdminInfoList type:
+
+_Step 5: Use the Components in `App`_
+1. Open `App.tsx` (or create a new component)
+2. Import and use the `UserInfo` and `AdminInfo` components, passing the appropriate props.
