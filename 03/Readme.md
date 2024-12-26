@@ -87,13 +87,13 @@ In this example, children can be anything that is a valid React element, includi
 
 # Exercise 1
 
-# Component Props Typing
+## Component Props Typing
 
-## Objective
+### Objective
 
 In this exercise, we'll practice typing props for a React component using TypeScript. we will create a simple `Button` component with typed props and then use it within a parent component.
 
-## Instructions
+### Instructions
 
 _Step 1: Create the Button Component_
 1. Create new file named `Button.tsx` inthe `src` directory.
@@ -113,11 +113,15 @@ _Step 3: Verify Our Types._
     - The second button should be disabled and should not trigger the alert.
 
 
-# Reusable Props Typing
+# Exercise 2
 
-## Objective
+## Reusable Props Typing
+
+### Objective
 
 In this exercise, we'll practice creating reusable prop types in TypeScript. we will define a set of reusable props for different types of user information and then apply the to multiple React companents.
+
+### Instructions
 
 _Step 1: Define Reusable Types_
 1. Create a file named `types.ts` in the `src` directory.
@@ -136,14 +140,15 @@ _Step 5: Use the Components in `App`_
 1. Open `App.tsx` (or create a new component)
 2. Import and use the `UserInfo` and `AdminInfo` components, passing the appropriate props.
 
+# Exercise 3
 
-# Typing the useState Hook
+## Typing the useState Hook
 
-## Objective
+### Objective
 
 In this exercise, you'll practice typing the `useState` hook in TypeScript. You will define state types for various use cases and apply them in functional components to ensure type safety and clarity.
 
-## Instructions
+### Instructions
 
 _Step 1: Basic `useState` Typing_
   1. Open `App.tsx` (or create a new component if you prefer).
@@ -156,3 +161,25 @@ _Step 2: Typing Complex State_
 _Step 3: Typing State with Arrays_
   1. Create a new file named `TodoList.tsx` in the `src` directory.
   2. Define a state variable for a list of to-do items and type it accordingly:
+
+
+# Exercise 4
+
+### Typing useRef, Forms, and Events
+
+### Objective
+In this exercise, we will practice typing React hooks such as useRef, handling forms, and typing events in TypeScript. We will create components that utilize these concepts with proper type annotations.
+
+### Instructions
+
+_Step 1: Typing useRef_
+1. Create a file named FocusInput.tsx in the src directory.
+2. Define a component that uses useRef to focus an input field when a button is clicked. Type the ref appropriately.
+
+_Step 2: Typing Forms_
+1. Create a file named ContactForm.tsx in the src directory.
+2. Define a form component with typed state and form handlers.
+
+_Step 3: Typing Events_
+1. Create a file named EventHandling.tsx in the src directory.
+2. Define a component that demonstrates typing different event handlers.
