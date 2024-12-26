@@ -163,11 +163,39 @@ _Step 3: Typing State with Arrays_
   2. Define a state variable for a list of to-do items and type it accordingly:
 
 
+# 1. Non-null Assertion Operator (!)
+
+### What is it?
+
+The non-null assertion operator (!) is used in TypeScript to assert that a value is not null or undefined at a specific point in the code, even if TypeScript cannot guarantee it. When we use !, we are telling TypeScript, "I know this value is not null or undefined here, so don't check it."
+
+### How does it work?
+
+The non-null assertion operator removes null and undefined from the type of the expression it's used on, essentially informing TypeScript that the value will not be null or undefined, even though it might be in some situations.
+
+# 2. Optional Chaining Operator (?.)
+
+### What is it?
+
+The optional chaining operator (?.) is used in JavaScript and TypeScript to safely access properties or methods of an object that might be null or undefined, without throwing an error. If a value is null or undefined, the expression short-circuits and returns undefined instead of throwing an error.
+
+### How does it work?
+The optional chaining operator allows us to safely access properties or methods of objects that might not exist. If the left-hand side of the operator is null or undefined, the entire expression will evaluate to undefined, rather than throwing a runtime error.
+
+
+# Dynamic Property Names in Objects
+
+The `[anything]` syntax is a feature of computed property names in JavaScript (and TypeScript). It allows us to use an expression to dynamically define the property name of an object.
+
+When we use `[anything]`, JavaScript evaluates the expression inside the brackets and uses the result as the key for the object.
+This is useful when we need to set the property name based on a variable or some computation.
+
 # Exercise 4
 
 ### Typing useRef, Forms, and Events
 
 ### Objective
+
 In this exercise, we will practice typing React hooks such as useRef, handling forms, and typing events in TypeScript. We will create components that utilize these concepts with proper type annotations.
 
 ### Instructions
@@ -183,3 +211,4 @@ _Step 2: Typing Forms_
 _Step 3: Typing Events_
 1. Create a file named EventHandling.tsx in the src directory.
 2. Define a component that demonstrates typing different event handlers.
+
