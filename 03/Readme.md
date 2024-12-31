@@ -192,7 +192,7 @@ This is useful when we need to set the property name based on a variable or some
 
 # Exercise 4
 
-### Typing useRef, Forms, and Events
+## Typing useRef, Forms, and Events
 
 ### Objective
 
@@ -212,3 +212,41 @@ _Step 3: Typing Events_
 1. Create a file named EventHandling.tsx in the src directory.
 2. Define a component that demonstrates typing different event handlers.
 
+
+# Exercise 5
+
+## Typing `useReducer`
+
+### Objective
+
+In this exercise, we'll practice using the `useReducer` hook with TypeScript. We will create a state management system using `useReducer` and type the actions, state, and reducer function to ensure type safety.
+
+### Instructions
+
+_Step 1: Define State and Actions_
+1. Create a file named `counterReducer.ts` in the `src` directory.
+2. Define the types for the state and actions for counter.
+
+_Step 2: Create the `Counter` Component_
+1. Create a fle named `Counter.tsx` in the `src` directory.
+2. Use `useReducer` to manage the counter state and actions in the component.
+
+_Step 3: Use the Component in `App`_
+1. Open `App.tsx` (or create a new component).
+2. Import and use the `Counter` component:
+```typescript
+// src/App.tsx
+import React from “react”;
+import Counter from "./Counter”;
+
+const App: React.FC = () = {
+  return (
+    <div>
+      <h1>React + TypeScript Exercise</hl>
+      <Counter />
+    </div>
+  );
+};
+
+export default App;
+```
