@@ -287,3 +287,17 @@ Daisy UI is a UI component library that is built on top of Tailwind CSS. It prov
 The main goal of Daisy UI is to make it easy for developers to create beautiful and functional user interfaces without having to design each element from scratch. Since it's based on Tailwind CSS, you can still use Tailwind’s utility classes to customize and tweak the components to fit your needs.
 
 In short, Daisy UI helps you quickly build stylish web interfaces while allowing flexibility for customization.
+
+
+# Radix UI 🌱
+
+Radix UI is a library of unstyled, accessible UI components for building high-quality user interfaces. Unlike libraries that provide pre-designed components, Radix UI focuses on providing the core functionality and behavior for common UI elements like modals, dropdowns, sliders, and tooltips.
+
+You can use Radix UI components and style them according to your own design using your preferred CSS framework (like Tailwind, CSS, or styled-components).
+
+
+# Shadcn UI 😎
+
+ShadeCN UI is a design system and library built for creating user interfaces (UIs) in a smooth, modern, and visually appealing way. It focuses on providing pre-built components, themes, and design elements to make web development easier.
+
+ShadeCN UI provides tools to speed up web development with a clean and customizable design system.
