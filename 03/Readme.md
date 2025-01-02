@@ -265,5 +265,5 @@ Create a React component that fetches user data from an API using `useEffect`, s
 1. *create a new React component named `UserList`.*
 2. Fetch data from the following API endpoint:
 -  https: //jsonplaceholder.typicode.com/users
-‘This endpoint returns a list of users, with each user object containing ``id``, ``name``, ``username``, ``email``, and ``phone``.
+- ‘This endpoint returns a list of users, with each user object containing ``id``, ``name``, ``username``, ``email``, and ``phone``.
 3. Define Typescript types for the user data. The data structure should include:
