@@ -258,7 +258,7 @@ export default App;
 
 ### Objective
 
-Create a React component that fetches user data from an API using `useEffect`, stores the data in a state variable using `useState`, and displays the data. We'll define TypeScript types to ensure type safety throughout the component.
+Create a React component that fetches user data from an API using `useEffect`, stores the data in a state variable using `useState`, and displays the data. You'll define TypeScript types to ensure type safety throughout the component.
 
 ### Requirements
 
