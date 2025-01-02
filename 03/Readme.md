@@ -278,3 +278,12 @@ Create a React component that fetches user data from an API using `useEffect`, s
 7. Verify your component:
     - Ensure that it correctly fetches the data and handles loading and error states.
     - Confirm that the user data is displayed in a table format.
+
+
+# Daisy UI 🏵️
+
+Daisy UI is a UI component library that is built on top of Tailwind CSS. It provides pre-designed, ready-to-use components like buttons, cards, modals, forms, and more, which you can easily integrate into your web projects.
+
+The main goal of Daisy UI is to make it easy for developers to create beautiful and functional user interfaces without having to design each element from scratch. Since it's based on Tailwind CSS, you can still use Tailwind’s utility classes to customize and tweak the components to fit your needs.
+
+In short, Daisy UI helps you quickly build stylish web interfaces while allowing flexibility for customization.
