@@ -250,3 +250,20 @@ const App: React.FC = () = {
 
 export default App;
 ```
+
+
+# Exercise 6
+
+## useEffect Types
+
+### Objective
+
+Create a React component that fetches user data from an API using `useEffect`, stores the data in a state variable using `useState`, and displays the data. We'll define TypeScript types to ensure type safety throughout the component.
+
+### Requirements
+
+1. *create a new React component named `UserList`.*
+2. Fetch data from the following API endpoint:
+    https: //jsonplaceholder.typicode.com/users
+  ‘This endpoint returns a list of users, with each user object containing ``id``, ``name``, ``username``, ``email``, and ``phone``.
+3. Define Typescript types for the user data. The data structure should include:
