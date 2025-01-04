@@ -323,3 +323,9 @@ We no longer need to install third-party packages for SEO and metadata because R
 React 19 now includes built-in support for *use client* and *use server* directives.
 
 This allows components to be rendered on the server, resulting in improved SEO, faster page load times, and more straightforward data fetching.
+
+
+# USE
+
+The use() hook lets you read and load resources asynchronously, such as promises or context. Unlike other hooks, it can be utilized in loops and conditionals.
+In certain situations, it can serve as a replacement for useEffect() when fetching data, and it streamlines context usage by allowing you to use use(context) instead of useContext(contex).
