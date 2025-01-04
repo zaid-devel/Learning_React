@@ -301,3 +301,25 @@ You can use Radix UI components and style them according to your own design usin
 ShadeCN UI is a design system and library built for creating user interfaces (UIs) in a smooth, modern, and visually appealing way. It focuses on providing pre-built components, themes, and design elements to make web development easier.
 
 ShadeCN UI provides tools to speed up web development with a clean and customizable design system.
+
+
+
+# REACT 19
+
+## COMPILER
+
+React React 19 now includes its *own compiler*, which will not only speed up performance but also automate certain tedious tasks, reducing the workload for developers.
+
+## Memorization or Memoization
+
+With React 19's new compiler, there's no longer a need for memorization the process of optimizing components to prevent unnecessary re-renders. Previously, we relied on hooks like '*useMemo()*' and '*useCallback()*' for this purpose, but these will now become obsolete (not in use any more).
+
+## Metadata
+
+We no longer need to install third-party packages for SEO and metadata because React 19 now offers built-in support for these features. We can place the tags anywhere within the component and it will work for both the client and server.
+
+## Directives
+
+React 19 now includes built-in support for *use client* and *use server* directives.
+
+This allows components to be rendered on the server, resulting in improved SEO, faster page load times, and more straightforward data fetching.
